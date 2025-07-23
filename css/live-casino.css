@@ -1,0 +1,443 @@
+/* Live Casino Page Styles */
+
+/* Banner Section */
+.live-casino-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/live-casino-bg.jpg') center/cover no-repeat;
+    background-color: var(--secondary-color);
+}
+
+/* Live Casino Intro */
+.live-casino-intro {
+    padding: 2rem 0;
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.intro-content p {
+    font-size: 1.2rem;
+    color: var(--gray-color);
+}
+
+/* Game Categories */
+.live-game-categories {
+    padding: 4rem 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.section-header p {
+    color: var(--gray-color);
+    font-size: 1.1rem;
+}
+
+.highlight {
+    color: var(--primary-color);
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.category-card {
+    background-color: rgba(26, 26, 46, 0.7);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+    border: 1px solid rgba(123, 44, 191, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(123, 44, 191, 0.4);
+}
+
+.category-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 1.5rem;
+    background-color: rgba(123, 44, 191, 0.1);
+    color: var(--primary-color);
+    font-size: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.category-card:hover .category-icon {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.category-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.category-card p {
+    color: var(--gray-color);
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.game-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.game-details span {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.btn-play {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: var(--transition);
+}
+
+.btn-play:hover {
+    transform: translateY(-3px);
+    background-color: var(--primary-color);
+}
+
+/* Live Providers */
+.live-providers {
+    padding: 4rem 0;
+    background-color: rgba(10, 10, 21, 0.5);
+    border-radius: 10px;
+    margin-bottom: 4rem;
+}
+
+.providers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.provider-card {
+    background-color: rgba(26, 26, 46, 0.7);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+    border: 1px solid rgba(123, 44, 191, 0.1);
+}
+
+.provider-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(123, 44, 191, 0.4);
+}
+
+.provider-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 1.5rem;
+    background-color: rgba(123, 44, 191, 0.1);
+    color: var(--primary-color);
+    font-size: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.provider-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.provider-card p {
+    color: var(--gray-color);
+    margin-bottom: 1.5rem;
+}
+
+.provider-features {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.provider-features span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+.provider-features i {
+    color: var(--accent-color);
+}
+
+/* Fair Gaming */
+.fair-gaming {
+    padding: 4rem 0;
+    margin-bottom: 4rem;
+}
+
+.fair-content {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.fair-text {
+    flex: 1;
+}
+
+.fair-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.fair-text p {
+    color: var(--gray-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.fair-features {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.fair-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--text-color);
+}
+
+.fair-features li i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.fair-image {
+    flex: 1;
+}
+
+.video-placeholder {
+    width: 100%;
+    height: 350px;
+    background-color: rgba(26, 26, 46, 0.7);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    box-shadow: var(--card-shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.video-placeholder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(123, 44, 191, 0.1) 0%, rgba(247, 37, 133, 0.1) 100%);
+    z-index: 1;
+}
+
+.play-button {
+    width: 80px;
+    height: 80px;
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative;
+    z-index: 2;
+}
+
+.play-button:hover {
+    transform: scale(1.1);
+    background-color: var(--primary-color);
+}
+
+.video-placeholder span {
+    color: var(--text-color);
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+}
+
+/* VIP Tables */
+.vip-tables {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.8) 0%, rgba(10, 10, 21, 0.8) 100%), url('../images/vip-table-bg.jpg') center/cover no-repeat;
+    margin-bottom: 4rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.vip-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.vip-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.vip-content p {
+    color: var(--gray-color);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.vip-features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.vip-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.vip-feature i {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(123, 44, 191, 0.1);
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vip-feature span {
+    color: white;
+    font-weight: 600;
+}
+
+.btn-vip {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: var(--transition);
+}
+
+.btn-vip:hover {
+    transform: translateY(-3px);
+    background-color: var(--primary-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .fair-features {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1300px) {
+    .providers-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .fair-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .vip-features {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .video-placeholder {
+        height: 250px;
+    }
+    
+    .fair-text h2,
+    .vip-content h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .category-icon,
+    .provider-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .vip-feature i {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    
+    .play-button {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+} 

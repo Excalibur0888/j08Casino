@@ -1,0 +1,481 @@
+/* Promotions Page Styles */
+
+/* Banner Section */
+.promotions-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/promotions-bg.jpg') center/cover no-repeat;
+    background-color: var(--primary-color);
+}
+
+/* Promotions Intro */
+.promotions-intro {
+    padding: 2rem 0;
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.intro-content p {
+    font-size: 1.2rem;
+    color: var(--gray-color);
+}
+
+/* Main Promotions Section */
+.promotions {
+    padding: 4rem 0;
+}
+
+.promo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.promo-card {
+    background-color: rgba(26, 26, 46, 0.7);
+    border-radius: 15px;
+    padding: 2rem;
+    transition: var(--transition);
+    box-shadow: var(--card-shadow);
+    border: 1px solid rgba(123, 44, 191, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.promo-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(123, 44, 191, 0.4);
+}
+
+.promo-icon {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(123, 44, 191, 0.1);
+    color: var(--primary-color);
+    font-size: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.welcome-bonus .promo-icon {
+    color: #f72585;
+}
+
+.cashback .promo-icon {
+    color: #4cc9f0;
+}
+
+.daily-reload .promo-icon {
+    color: #4361ee;
+}
+
+.vip-club .promo-icon {
+    color: #ffd700;
+}
+
+.missions .promo-icon {
+    color: #38b000;
+}
+
+.promo-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.vip-club .promo-details {
+	padding: 1rem;
+}
+
+.promo-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.promo-details p {
+    color: var(--gray-color);
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.promo-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.promo-tag {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background-color: rgba(123, 44, 191, 0.2);
+    color: var(--primary-color);
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.promo-expiry {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--gray-color);
+    font-size: 0.9rem;
+}
+
+.promo-expiry i {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+}
+
+.btn-claim {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: var(--transition);
+    margin-top: auto;
+}
+
+.btn-claim:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+/* Promo Terms Section */
+.promo-terms {
+    padding: 4rem 0;
+    background-color: rgba(10, 10, 21, 0.5);
+    border-radius: 10px;
+    margin: 2rem 0 4rem;
+}
+
+.terms-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.terms-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.terms-content p {
+    color: var(--gray-color);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 0.8rem 1.8rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: var(--transition);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Promotion Cards */
+.promotion-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.promotion-card {
+    background-color: rgba(26, 26, 46, 0.7);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+    border: 1px solid rgba(123, 44, 191, 0.1);
+}
+
+.promotion-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(123, 44, 191, 0.4);
+}
+
+.promotion-thumb {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.promotion-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.promotion-card:hover .promotion-thumb img {
+    transform: scale(1.05);
+}
+
+.promotion-content {
+    padding: 1.5rem;
+}
+
+.promotion-content h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.promotion-content p {
+    color: var(--gray-color);
+    margin-bottom: 1.5rem;
+}
+
+.promotion-content .btn {
+    margin-top: 1rem;
+}
+
+/* VIP Club Section */
+.vip-club {
+    padding: 4rem 0;
+    background-color: rgba(10, 10, 21, 0.5);
+    border-radius: 10px;
+    margin-bottom: 4rem;
+}
+
+.vip-levels {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.vip-card {
+    background-color: rgba(26, 26, 46, 0.7);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+    border: 1px solid rgba(123, 44, 191, 0.1);
+}
+
+.vip-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(123, 44, 191, 0.4);
+}
+
+.vip-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.vip-bronze .vip-icon {
+    color: #cd7f32;
+}
+
+.vip-silver .vip-icon {
+    color: #c0c0c0;
+}
+
+.vip-gold .vip-icon {
+    color: #ffd700;
+}
+
+.vip-card h3 {
+    margin-bottom: 1rem;
+}
+
+.vip-perks {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.vip-perks li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.vip-perks li i {
+    color: var(--accent-color);
+    margin-right: 0.5rem;
+}
+
+/* Mission Rewards Section */
+.mission-rewards {
+    margin-bottom: 4rem;
+}
+
+.mission-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.mission-item {
+    background-color: rgba(26, 26, 46, 0.7);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: var(--transition);
+    border: 1px solid rgba(123, 44, 191, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.mission-item:hover {
+    transform: translateY(-5px);
+    border-color: rgba(123, 44, 191, 0.4);
+}
+
+.mission-icon {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(123, 44, 191, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.mission-content h4 {
+    margin-bottom: 0.5rem;
+}
+
+.mission-content p {
+    color: var(--gray-color);
+    font-size: 0.9rem;
+}
+
+.mission-reward {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+/* Terms & Conditions Section */
+.terms-section {
+    background-color: rgba(26, 26, 46, 0.7);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
+
+.terms-section h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.terms-list {
+    list-style: decimal;
+    padding-left: 1.5rem;
+}
+
+.terms-list li {
+    margin-bottom: 1rem;
+    color: var(--gray-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .promotion-cards,
+    .vip-levels,
+    .mission-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1300px) {
+    .vip-levels {
+        grid-template-columns: 1fr;
+    }
+    
+    .promo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    .promotion-cards,
+    .mission-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .promotion-thumb {
+        height: 180px;
+    }
+    
+    .terms-section {
+        padding: 1.5rem;
+    }
+    
+    .promo-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .promo-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .vip-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+    
+    .mission-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .mission-content {
+        text-align: center;
+    }
+    
+    .mission-reward {
+        justify-content: center;
+    }
+    
+    .promo-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.8rem;
+    }
+} 
